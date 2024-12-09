@@ -61,6 +61,12 @@ Yaazhini is an open-source **mobile application security testing tool** for Andr
 
 Dozer is a tool that helps you create real-time **APIs** (ways for applications to talk to each other) from your data. It takes data from places like databases, message queues (like Kafka), or other sources and lets you access it instantly in your application, without delays.
 
+### Pipx Method
+```
+pipx install drozer
+```
+
+### Docker Method
 > [!IMPORTANT]
 > You Need to  Install <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">Docker</a> to Run Dozer
 
@@ -78,9 +84,9 @@ docker build -t withsecurelabs/drozer https://github.com/WithSecureLabs/drozer.g
 > [!NOTE]
 >You need to install Drozer Agent Apk [agent-debug.apk](https://github.com/WithSecureLabs/drozer-agent/releases)
 
-### Run and Connect
+#### Methods to Run and Connect Drozer
 
-#### Option 1: connect to the phone via network
+##### Option 1: connect to the phone via network
 
 If the target phone and PC are on the same network, this tends to be the easiest approach.
 
@@ -96,7 +102,7 @@ If a system shell is required (for example, to inspect and retrieve any files do
 1. Then run the drozer command to connect to the phone: 
 		`drozer console connect --server <phone IP address>`
 
-#### Option 2: connect to the phone via USB
+##### Option 2: connect to the phone via USB
 
 If network communications is restricted, `adb` port forwarding can be used to forward TCP traffic via USB.
 
@@ -202,7 +208,7 @@ Run Command:
 	`apkleaks <command>`. 
 
 ---
-## [RMS](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security?tab=readme-ov-file)
+## RMS
 ---
 **Runtime Mobile Security (RMS)**, powered by [FRIDA](https://github.com/frida/frida), is a powerful web interface that helps you to manipulate **Android and iOS Apps** at Runtime. With RMS you can easily dump all loaded classes and relative methods, hook everything on the fly, trace methods args and return value, load custom scripts and many other useful stuff.
 
