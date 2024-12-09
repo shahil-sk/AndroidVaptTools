@@ -236,3 +236,21 @@ Run Command:
 3. Launch RMS via the following command
     - `rms` (or `RMS-Runtime-Mobile-Security`)
 4. Open your browser at `http://127.0.0.1:5491/`
+
+---
+## reFlutter
+---
+
+### Install
+
+```
+pipx install reflutter
+```
+
+### Usage
+
+```
+reflutter <apkfile.path>
+```
+
+---
