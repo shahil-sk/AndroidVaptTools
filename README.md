@@ -62,11 +62,13 @@ Yaazhini is an open-source **mobile application security testing tool** for Andr
 Dozer is a tool that helps you create real-time **APIs** (ways for applications to talk to each other) from your data. It takes data from places like databases, message queues (like Kafka), or other sources and lets you access it instantly in your application, without delays.
 
 ### Pipx Method
+
 ```
 pipx install drozer
 ```
 
 ### Docker Method
+
 > [!IMPORTANT]
 > You Need to  Install <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">Docker</a> to Run Dozer
 
