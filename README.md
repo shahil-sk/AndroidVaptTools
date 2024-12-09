@@ -67,9 +67,15 @@ Dozer is a tool that helps you create real-time **APIs** (ways for applications 
 pipx install drozer
 ```
 
+### Run and Connect (Pipx)
+1. First, forward port 31415 to the phone via ADB: `adb forward tcp:31415 tcp:31415`
+2. Ensure that the [drozer agent⁠](https://github.com/WithSecureLabs/drozer-agent/releases/) is running on the target device, and that the embedded server has been started.
+3. Then run the drozer command to connect to the phone: 
+		`drozer console connect`
+
 ### Docker Method
 
-> [!NOTE]
+> [!IMPORTANT]
 > You Need to  Install <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">Docker</a> to Run Dozer
 
 **Install Drozer:**
@@ -83,12 +89,12 @@ docker build -t withsecurelabs/drozer https://github.com/WithSecureLabs/drozer.g
 ```
 
 
-> [!IMPORTANT]
->You need to install [agent-debug.apk](https://github.com/WithSecureLabs/drozer-agent/releases) on your base device
+> [!NOTE]
+>You need to install Drozer Agent Apk [agent-debug.apk](https://github.com/WithSecureLabs/drozer-agent/releases)
 
-#### Methods to Run and Connect Drozer
+### Run and Connect (Docker)
 
-##### Option 1: connect to the phone via network
+#### Option 1: connect to the phone via network
 
 If the target phone and PC are on the same network, this tends to be the easiest approach.
 
@@ -104,7 +110,7 @@ If a system shell is required (for example, to inspect and retrieve any files do
 1. Then run the drozer command to connect to the phone: 
 		`drozer console connect --server <phone IP address>`
 
-##### Option 2: connect to the phone via USB
+#### Option 2: connect to the phone via USB
 
 If network communications is restricted, `adb` port forwarding can be used to forward TCP traffic via USB.
 
