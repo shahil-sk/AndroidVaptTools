@@ -69,7 +69,7 @@ pipx install drozer
 
 ### Docker Method
 
-> [!IMPORTANT]
+> [!NOTE]
 > You Need to  Install <a href="https://docs.docker.com/get-started/get-docker/" target="_blank">Docker</a> to Run Dozer
 
 **Install Drozer:**
@@ -83,8 +83,8 @@ docker build -t withsecurelabs/drozer https://github.com/WithSecureLabs/drozer.g
 ```
 
 
-> [!NOTE]
->You need to install Drozer Agent Apk [agent-debug.apk](https://github.com/WithSecureLabs/drozer-agent/releases)
+> [!IMPORTANT]
+>You need to install [agent-debug.apk](https://github.com/WithSecureLabs/drozer-agent/releases) on your base device
 
 #### Methods to Run and Connect Drozer
 
